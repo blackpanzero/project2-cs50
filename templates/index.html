@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+
+{% block title %}Tubonge | create{% endblock %}
+{% block content %}
+    <h2>Create a new Room</h2>
+    <form action="/create" method="post">
+     
+        <div class="form-group">
+            <input type="text" class="form-control" name="channel" id="channel" autofocus required>
+        </div>
+        <button class="btn btn-primary" type="submit">Create Room</button>
+    </form>
+    <br>
+    <h2>or join an existent one!</h2>
+    <h4>Rooms</h4>
+
+    {%if channels == []%}
+    <h5 class="channelss">No channels present</h5>
+    {%else%}
+
+    {% for channel in channels %}
+    <a class="dropdown-item channelss" href="/channels/{{ channel }}">{{ channel }}</a>
+    {% endfor %}
+
+    {%endif%}
+
+    <script>
+
+        if (localStorage.getItem('last_channel')) {
+            // Redirect to last channel
+            let channel = localStorage.getItem('last_channel');    
+            window.location.replace('/channels/' + channel);   
+        }
+
+    </script>
+{% endblock %}

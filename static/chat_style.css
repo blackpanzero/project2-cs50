@@ -1,0 +1,273 @@
+
+.wrapper {
+    display: flex;
+}
+
+#main-section {
+    overflow: hidden; /* Makee this div contain its floated children */
+    width: 100%;
+}
+
+#sidebar {
+    margin-top: 2em;
+    float: left; /* Make this div as wide as its contents */
+    min-height: 96vh;
+    padding-left: 1em;
+    padding-top: 3em;
+    padding-right:1em;
+    border-right: 0.5px solid #898c91;
+}
+
+#sidebar p {
+    padding-left: 2em;
+    padding-right:2em;
+}
+
+#sidebar p:hover {
+    background-color: #ffc107;
+}
+
+#sidebar h4 {padding-left: 0.5em;}
+
+
+#sidebar.view-sidebar {display: none;}
+
+#show-sidebar-button {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+    color: #335177;
+}
+
+@media (max-width: 567px) {
+    #sidebar {
+        display: none;
+    }
+
+    #sidebar.view-sidebar {
+        display: block;
+    }
+
+    #show-sidebar-button {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+#rightside-pannel {
+    overflow: hidden; /* Make this div take up the rest of the horizontal space, and no more */
+}
+
+#display-message-section {
+    margin-top: 5em;
+    min-height: 82vh;
+    max-height: 82vh;
+    overflow-y: auto; /*Make  this section scrolable */
+}
+
+#input-area {
+    padding-left: 1em;
+    padding-right: 1em;
+    bottom: 0;
+}
+
+input[type=text]:focus{
+    border-color: #ffc107;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 10px #ffc107;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.others-msg {
+    margin-right:7em;
+    margin-left: 1em;
+    padding: 0.5em 0.5em 0.5em 1em;
+    border-radius: 5px;
+    border-color: grey;
+    border-width: 0.5px;
+    border-style: solid;
+    background-color: #C2DBFB;
+    /* animation */
+    animation-name: fadeIn;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.my-msg {
+    margin-left:7em;
+    margin-right:1em;
+    padding: 0.5em 0.5em 0.5em 1em;
+    border-radius: 5px;
+    border-color: #206ED2;
+    border-width: 1px;
+    border-style: solid;
+    /* animation */
+    animation-name: fadeIn;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.system-msg {
+    margin-right:7em;
+    margin-left: 1em;
+    padding: 0.5em 0.5em 0.5em 1em;
+    color: #656d78;
+    font-size:0.9em;
+}
+
+.timestamp {
+    color: #656d78;
+    font-size:0.7em;
+}
+
+.other-username {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #206ED2;
+}
+
+.my-username {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #FF6B13;
+}
+
+#msg-input {
+    border-color: #ffc107;
+    border-width: 5px;
+}
+
+#get-username {
+    display: none !important;
+}
+.highlight{
+    color:#ffc107!important ;
+    background-color: white!important;
+    text-decoration: none!important;
+    
+}
+.entrance{
+    text-align: center!important;
+     /* animation */
+     animation-name: fadeIn;
+     animation-duration: 0.75s;
+     animation-fill-mode: forwards;
+     animation-timing-function: ease-in-out;
+
+}
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    background-color: inherit;
+    color: black;
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+  
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+  
+    border: 3px solid #f1f1f1;
+   
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 200px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+  .dropdown-menu{
+      background-color:#4c82c8!important;
+  }
+ 
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .center{
+    text-align: center!important;
+}
+.select-room:hover{
+    text-decoration: none!important;
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+        height: 100%;
+        line-height: 100%;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    75% {
+        opacity: 0;
+        height: 100%;
+        line-height: 100%;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    100% {
+        opacity: 0;
+        height: 0px;
+        line-height: 0px;
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+}
+.hide{
+    cursor: pointer;
+}

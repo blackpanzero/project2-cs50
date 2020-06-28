@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Tubonge | {{session.current_channel}}</title>
+         <link rel="shortcut icon" href="data:image/jpeg;base64,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" type="image/x-icon">
+
+      
+   
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!-- Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!-- Custom css for chat pages -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='chat_style.css') }}">
+        <!-- MY CSS -->
+        <link rel="stylesheet" href="../static/style.css">  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+
+      
+        <!-- Flash error messages -->
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <p class=formError>{{ messages[0] }}</p>
+            {% endif %}
+        {% endwith %}
+
+        <div class="wrapper">
+
+            <!-- Nav bar start -->
+            <nav class="navbar navbar-expand-sm navbar-light fixed-top navbar-expand-lg navbar-light bg-light" style="background-color: #66a1ee">
+             
+
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/">
+                        <h1><img src="https://img.favpng.com/6/10/13/livechat-online-chat-logo-computer-icons-png-favpng-TxWNEJkvmUpCitimFEKtUvfhb.jpg" width="60" height="50" >  Tubonge</h1>
+                    </a>
+                 
+                    <div id="show-sidebar-button" class="cursor-pointer">
+                        <i class="fas fa-plus-circle "></i>
+                        <span>Rooms</span>
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                     
+                        <ul class="navbar-nav ml-auto">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#" style="color:lightseagreen">{{ session.username }}</a>
+                          </li>
+                          <li class="nav-item">
+                            <a id="logout" class="nav-link" href="/logout">Logout</a>
+                          </li>                
+                        </ul>
+                      </div>
+                </div>
+            </nav>
+            <!-- Nav bar end -->
+
+            <!-- Main section start -->
+            <div id="main-section">
+
+                <!-- Sidebar start -->
+                <nav id="sidebar">
+                    <br>
+                    
+                    <button id="newChannel" class="open-button"><h5>+ New Room</h5></button>
+                    {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                                <span>{{ message }}</span>
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                  {% endwith %}
+
+                <div class="form-popup" id="myForm">
+                <form class="form-container"   method="post">
+                    
+
+                    <label for="name"><b>Ener new channel name</b></label>
+                   
+                    <input type="text" placeholder=" name" name="channel" required>
+
+                
+
+                    <button type="submit" class="btn">create</button>
+                    <button type="button" class="btn cancel">Close</button>
+                </form>
+                </div>
+                <h4>Rooms</h4>
+                                    
+                      
+                      
+                  
+                    {% for channel in channels %}
+
+                    {%if channel==session.current_channel%}
+                    
+                    
+                    <p><a id="channel" class="select-room cursor-pointer highlight"  href="/channels/{{ channel }}">{{ channel }}</a></p>
+                   {%else%}
+                   <p> <a id="channel" class="select-room cursor-pointer"  href="/channels/{{ channel }}">{{ channel }}</a></p>
+
+
+                   {% endif %}
+                   
+
+                    {% endfor %}
+
+                    <h4>Online</h4>
+                 
+                    {% for user in users %}
+            
+                
+                <p id class="select-room cursor-pointer" ><span class="dot"></span> {{ user }}</p>
+        
+            
+                {% endfor %}
+            </ul>
+               
+
+                  
+                </nav>
+                <!-- Sidebar end -->
+
+                <!-- Rightside pannel start -->
+                <div id="rightside-pannel">
+
+                    <!-- Display message start-->
+                    <div id="display-message-section">
+                        <div>
+                            <h1 style="margin-bottom: 1rem">
+                                <span class="badge badge-dark center text-center">
+                                   <div class="center"> {{ session.current_channel }}</div>
+                                </span>
+                            </h1>
+                        
+                        </div>
+                        {%- if messages -%} 
+                        {%- for message in messages -%}
+
+                        {%if session.username == message[1]%}
+                        <P class="my-msg">
+                            {{ message[1] }}
+                            <br>
+                            <span class="my-username">{{ message[2] }}</span>
+                            <br>
+                            <span class="timestamp">{{ message [0] }}</span>
+                        </P>
+                        {%else%}
+                        <P class="others-msg">
+                            {{ message[1] }}
+                            <br>
+                            <span class="my-username">{{ message[2] }}</span>
+                            <br>
+                            <span class="timestamp">{{ message [0] }}</span>
+                        </P>
+                        {% endif %}
+                        
+                        
+                        {%- endfor -%}
+                       <h6 class="center">{{ 'These are older messages ' }}{{- '\n' -}} </h6> 
+                       <div class="dropdown-divider drop"></div>
+                    {%- endif -%}
+                   
+                    </div>
+                    <!-- Display message end -->
+
+                    <!-- Type message start -->
+                    <div class="form-row">
+                   <div id="input-area" class="input-group mb-3 col-sm" >
+                       
+                        <input type="text" id="comment" class="form-control" placeholder="Type here..." aria-label="Type a message" aria-describedby="basic-addon2" autocomplete="off">
+                        <div class="input-group-append">
+                            <button id="send_message" class="btn btn-warning" type="button">SEND <i class="fa fa-paper-plane-o"></i></button>
+                        </div>
+                      
+                    </div>
+                    <div class="input-group mb-3 col-sm-2">
+                        <button id="leave" type="button" class="btn btn-warning">Leave Room</button>
+                    </div>
+                    </div>
+                    <!-- Type message end -->
+                </div>
+                <!-- Rightside pannel end -->
+            </div>
+            <!-- Main section end -->
+        </div>
+        <!-- Wrapper end -->
+        <span id="get-username">{{ session.username }}</span>
+
+       
+
+        <script src="../static/channel.js"></script>
+
+       
+
+        <!-- SocketIO JS -->
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+
+      
+
+       
+    </body>
+</html>
